@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MyDB-Web.config Connection String" description="MyDB Connection String used in web.config by the application to access the database." defaultValue="Server=DESKTOP-NSHF074\SQLEXPRESS;Database=SportsHouses;User ID=amberapp;Password=password" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Charma\ Whorms\\source\\repos\\Sports\ Day\ Website\\Sports\ Day\ Website\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyDB']/@connectionString" />
+  </parameter>
+</parameters>

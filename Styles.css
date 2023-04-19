@@ -1,0 +1,216 @@
+﻿*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #edf2f4;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 3px 4px 6px #999;
+    align-items: center;
+}
+
+#lblResults, #lblConnection{
+    display: none;
+}
+
+.nav-bar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-title span {
+    font-size: 18px;
+    color: #016097;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-title p {
+    font-size: 16px;
+    color: #016097;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.form-container{
+    width: 70%;
+    height: 800px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.form-container  h1{
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.form{
+    /*width: 40%;*/
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gen{
+    display: flex;
+    width: 150px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#radMale{
+    margin-right: 5px;
+    font-weight: 100;
+}
+
+#radFemale{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#txtFirstName, #txtLastName, #txtEmail{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #000000;
+}
+
+#lblFirstName, #lblLastName, #lblEmail, #lblGender{
+    font-size: 16px;
+}
+
+.btnSubmit{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 40px;
+    background-color: #0083ce;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.btnSubmit:hover{
+    cursor: pointer;
+    background-color: #008dd8;
+}
+
+    @media screen and (max-width: 600px) {
+        #txtFirstName, #txtLastName {
+            width: 100%;
+        }
+
+        .form-container {
+            margin-left: 4%;
+            margin-right: 4%;
+            width: auto;
+            margin-top: 50px;
+        }
+
+        .form{
+            width: 100%;
+        }
+
+        .name{
+            display: block;
+
+        }
+
+    }
+
+    @media screen and (min-width: 601px) {
+        .form-container {
+            /*background-color: #01609;*/
+        }
+
+        .form {
+            justify-content: center;
+        }
+    }
+
+@media screen and (min-width: 1200px) {
+    .form-container {
+        margin-top: 80px;
+    }
+
+    .form {
+        justify-content: center;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .form-container {
+        margin-top: 30px;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .name{
+        display: block;
+    }
+}
+
+.alert_message {
+    width: 100%;
+    z-index: 10000;
+    padding: 0px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 360px) {
+    #txtFirstName, #txtLastName {
+        width: 100%;
+    }
+    
+    .form-container {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .form {
+        width: 100%;
+    }
+
+    .name {
+        display: block;
+    }
+}
+
